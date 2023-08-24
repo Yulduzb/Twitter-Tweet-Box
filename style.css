@@ -12,6 +12,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    
 }
 
 .wrapper {
@@ -69,6 +70,12 @@ body {
 .input-box .tweet-area {
     position: relative;
     min-height: 30px;
+    max-height: 50px;
+    overflow-y: auto;
+}
+
+.tweet-area::-webkit-scrollbar{
+    width: 0px;
 }
 
 .tweet-area .placeholder {
@@ -85,6 +92,13 @@ body {
     font-size: 17px;
     word-wrap: break-word;
     color: #c5ccd1;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.tweet-area .editable{
+position: relative;
+z-index: 5;
 }
 
 .tweet-area .readonly {
@@ -92,6 +106,8 @@ body {
     top: 0;
     left: 0;
     z-index: -1;
+    color: transparent;
+    background: transparent;
 }
 
 .readonly .highlight {
