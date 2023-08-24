@@ -62,7 +62,6 @@ body {
 
 .input-box {
     padding-top: 30px;
-
     border-bottom: 1px #65778676 solid;
 
 }
@@ -201,4 +200,61 @@ span .fa-plus {
 .content button.active {
     opacity: 1;
     pointer-events: auto;
+}
+
+
+@media screen and (max-width:600px) {
+    .wrapper {
+        width: 450px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .wrapper {
+        width: 300px;
+        background-color: #fff;
+          
+    }
+
+    .input-box {
+        padding-top: 20px;
+        border-bottom: none;
+
+    }
+
+
+    .btn {
+        background-color: #fff;
+    }
+
+
+
+    .content button {
+        position: absolute;
+        top: 35%;
+        right: 15px;
+    }
+
+
+    .privacy {
+        position: absolute;
+        left: 16px;
+
+
+    }
+
+    .icons {
+        position: absolute;
+        left: 10px;
+        top: 62%
+    }
+
+
+
+    .content-icons {
+        position: absolute;
+        display: flex;
+        top: 62%;
+        right: 10px;
+    }
 }
